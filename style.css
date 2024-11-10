@@ -686,4 +686,55 @@
         padding: 10px;
         left: 31%;
     }
+    body{
+        font-size: 15px;
+    }
+    #menu{
+        top: 50%;
+        display: block;
+    }
+    .navbar__2{
+        display: none;
+    }
+    .navbar__3{
+        display: none;
+    }
+    .heading{
+        display: none;
+    }
+
+    .iage{
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+    .iag p{
+        font-size: 12px;
+        left: 15%;
+    }
+    .iag h4{
+        top: 14%;
+        border-radius: 5px;
+        padding: 10px;
+        left: 25%;
+    }
+    .iag h1{
+        font-size: 20px;
+        top:18%;
+        left:15%
+    }
+    .iag h3{
+        font-size: 13px;
+        top:55%;
+        left: 14%;
+    }
+    .iag button{
+        top:80%
+    }
+    .main{
+        display: none;
+    }
+    .selt{
+        right: -5px;
+        bottom: 60px;
+    }
 }
