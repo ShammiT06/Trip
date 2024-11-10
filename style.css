@@ -36,10 +36,15 @@
     animation: sling;
     animation-duration: 5s;
 }
+
+.container-33 :hover i{
+    cursor: pointer;
+    background-color: red;
+}
 .navbar__3 p{
     padding: 20px;
 }
-.menu{
+#menu{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -212,63 +217,13 @@
     border: none;
     background-color: plum;
 }
-/* #power{
-    position: absolute;
-    z-index: 1;
-    color: white; 
-    top: 20%;
-    left: 20%;;
-}
-h4{
-    padding: 5px;
-    position: absolute;
-    color: black;
-    background-color: white;
-    border-radius: 5px;
-    top:19%;
-    left: 28%;
-}
-.iage__beta{
-    position: absolute;
-    color: white;
-    top: 25%;
-    left: 19%;
-    font-size: 50px;
-}
-#iage__del{
-    position: absolute;
-    top: 60%;
-    left: 19%;
-    font-size: 25px;
-    color: white;
-}
-#iage__but{
-    position: absolute;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background-color: plum;
-    border-radius: 30px;
-    border: none;
-    top:75%;
-    left:20%;
-    font-size: 16px;
-} */
 .container1{
     padding-left:10%;
     padding-right: 10%;
     margin-top: 20px;
 }
-/* .container1__head{
-    padding-left: 10%;
-    padding-right: 10%;
-
-} */
 .container1__para{
-    /* padding-left: 10%;
-    padding-right: 10%; */
-    margin-top: 10px;
+   margin-top: 10px;
 }
 .container-i{
     padding-left: 10%;
@@ -331,7 +286,12 @@ h4{
 .container3__para{
     margin-top: 15px;
 }
+.container-33 :hover button{
+    color: white;
+    background-color: #545759;
+}
 .container3{
+    cursor: pointer;
     padding-left: 10%;
     padding-right: 10%;
     display: flex;
@@ -343,38 +303,6 @@ h4{
     width: 250px;
     border-radius: 10px;
 }
-/* #heart1{
-    position: absolute;
-    top: 30px;
-    padding: 10px;
-    left: 345px;
-    background-color: white;
-    border-radius: 30px;
-}
-#heart2{
-    position: absolute;
-    top: 30px;
-    padding: 10px;
-    left: 620px;
-    background-color: white;
-    border-radius: 30px;
-}
-#heart3{
-    position: absolute;
-    top: 30px;
-    padding: 10px;
-    left: 895px;
-    background-color: white;
-    border-radius: 30px;
-}
-#heart4{
-    position: absolute;
-    top: 30px;
-    padding: 10px;
-    left: 87%;
-    background-color: white;
-    border-radius: 30px;
-} */
  .container-33{
     position: relative;
  }
@@ -637,6 +565,11 @@ h4{
     border-radius: 10px;
 }
 .set__ind select:hover{
+    cursor: pointer;
+    background-color: transparent;
+}
+.set__bub select:hover{
+    cursor: pointer;
     background-color: transparent;
 }
 .last{
@@ -692,72 +625,65 @@ h4{
 }
 
 /* Media Queries */
-@media screen and (max-width:620px) {
+@media screen and (max-width:800px){
+    body{
+        font-size: 15px;
+    }
+    #menu{
+        top: 50%;
+        display: block;
+    }
     .navbar__2{
         display: none;
     }
-    .main{
+    .navbar__3{
         display: none;
     }
     .heading{
         display: none;
     }
-    #power{
-        position: absolute;
-        top: 20px;
-        left: 60px;
-    }
-    #head4{
-        top: 10%;
-        left: 34%;
-    }
-    .menu{
-        margin-top: 40px;
-        display: block;
-    }
-    .iage img{
-        width: 450px;
-    }
-    .iage__beta{
-        top: 26%;
-        font-size: 25px;
-        left: 12%;
-    }
-    #iage__del{
-        top:57%;
-        left:12%;
-        font-size: 15px;
-    }
-    #iage__but{
-        padding-left: 7px;
-        padding-right: 7px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        border-radius: 10px;
-        top: 80%;
-        left: 12%;
 
+    .iage{
+        padding-left: 12%;
+        padding-right: 12%;
     }
-    #heart1{
-        left: 250px;
+    .iag p{
+        font-size: 12px;
+        left: 15%;
     }
-    .navbar__3 button{
-        display: none;
-
+    .iag h4{
+        top: 14%;
+        border-radius: 5px;
+        padding: 10px;
+        left: 25%;
     }
-    #globe{
+    .iag h1{
+        font-size: 20px;
+        top:18%;
+        left:15%
+    }
+    .iag h3{
+        font-size: 13px;
+        top:55%;
+        left: 14%;
+    }
+    .iag button{
+        top:80%
+    }
+    .main{
         display: none;
     }
-    .container-ims__txt1{
-        top: 200px;
-        height: fit-content;
+    .selt{
+        right: -5px;
+        bottom: 60px;
     }
-    .container-ims__txt2{
-        top: 480px;
-        height: fit-content;
-    }
-    .container-ims__txt3{
-        top: 760px;
-        height: fit-content;
+
+}    
+@media screen and (max-width:600px){
+    .iag h4{
+        top: 14%;
+        border-radius: 5px;
+        padding: 10px;
+        left: 31%;
     }
 }
